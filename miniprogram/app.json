@@ -1,6 +1,7 @@
 {
   "pages": [
-    "pages/index/index",
+    "pages/index/home",
+    "pages/class/classify",
     "pages/shop/shoppingcart",
     "pages/mine/mine",
     "pages/userConsole/userConsole",
@@ -19,16 +20,21 @@
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarBackgroundColor": "#9FE2BF",
     "navigationBarTitleText": "奇遇现",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "list": [{
-      "pagePath": "pages/index/index",
+      "pagePath": "pages/index/home",
       "text": "首页",
       "iconPath": "images/首页_nonactive.png",
       "selectedIconPath": "images/首页.png"
+    },{
+      "pagePath": "pages/class/classify",
+      "text": "分类",
+      "iconPath": "images/购物车_nonactive.png",
+      "selectedIconPath": "images/购物车.png"
     },{
       "pagePath": "pages/shop/shoppingcart",
       "text": "购物车",
