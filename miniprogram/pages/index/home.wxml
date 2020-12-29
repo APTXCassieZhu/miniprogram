@@ -1,2 +1,15 @@
 <!--pages/index/home.wxml-->
-<text>pages/index/home.wxml</text>
+<!-- 搜索功能暂时不实现 -->
+<!-- <van-search disabled value="{{ value }}" shape="round" placeholder="请输入搜索关键词" /> -->
+<view class="swpier_container">
+  <swiper indicator-dots autoplay circular>
+    <swiper-item
+      wx:for="{{swiperList}}"
+      wx:for-item="item"
+    >
+      <navigator>
+        <image mode="widthFix" src="{{item.fileID}}"></image>
+      </navigator>
+    </swiper-item>
+  </swiper>
+</view>

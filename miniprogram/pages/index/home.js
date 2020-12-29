@@ -5,14 +5,23 @@ Page({
    * Page initial data
    */
   data: {
-
+    swiperList:[]
   },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    const db = wx.cloud.database()
+    db.collection('swiper').get({
+      success:res=>{
+        console.log(res)
+        this.setData({
+          swiperList:res.data
+        })
+      },
+      fail: console.error
+    })
   },
 
   /**

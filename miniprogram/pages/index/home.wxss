@@ -1,1 +1,9 @@
 /* pages/index/home.wxss */
+.swpier_container swiper{
+  width: 100%;
+  height: calc(100vw * 300 /400 );
+}
+
+image{
+  width: 100%;
+}

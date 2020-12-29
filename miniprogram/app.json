@@ -25,28 +25,32 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
+    "selectedColor": "#3bc47d",
     "list": [{
       "pagePath": "pages/index/home",
       "text": "首页",
-      "iconPath": "images/首页_nonactive.png",
-      "selectedIconPath": "images/首页.png"
+      "iconPath": "icons/首页_nonactive.png",
+      "selectedIconPath": "icons/首页.png"
     },{
       "pagePath": "pages/class/classify",
       "text": "分类",
-      "iconPath": "images/购物车_nonactive.png",
-      "selectedIconPath": "images/购物车.png"
+      "iconPath": "icons/分类_nonactive.png",
+      "selectedIconPath": "icons/分类.png"
     },{
       "pagePath": "pages/shop/shoppingcart",
       "text": "购物车",
-      "iconPath": "images/购物车_nonactive.png",
-      "selectedIconPath": "images/购物车.png"
+      "iconPath": "icons/购物车_nonactive.png",
+      "selectedIconPath": "icons/购物车.png"
     },{
       "pagePath": "pages/mine/mine",
       "text": "我的",
-      "iconPath": "images/我_nonactive.png",
-      "selectedIconPath": "images/我.png"
+      "iconPath": "icons/我_nonactive.png",
+      "selectedIconPath": "icons/我.png"
     }]
   },
-  "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-icon": "@vant/weapp/icon/index"
+  },
+  "sitemapLocation": "sitemap.json"
 }
