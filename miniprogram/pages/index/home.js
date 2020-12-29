@@ -5,7 +5,13 @@ Page({
    * Page initial data
    */
   data: {
-    swiperList:[]
+    swiperList:[],
+    themes: [
+      { theme_icon: 'theme@1.png', theme_name: '精品热卖', theme_type: 1 },
+      { theme_icon: 'theme@2.png', theme_name: '新品上市', theme_type: 2 },
+      { theme_icon: 'theme@3.png', theme_name: '经典回购', theme_type: 3 },
+      { theme_icon: 'theme@4.png', theme_name: '优质推荐', theme_type: 4 },
+    ],
   },
 
   /**

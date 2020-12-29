@@ -1,8 +1,8 @@
 <!--pages/index/home.wxml-->
 <!-- 搜索功能暂时不实现 -->
 <!-- <van-search disabled value="{{ value }}" shape="round" placeholder="请输入搜索关键词" /> -->
-<view class="swpier_container">
-  <swiper indicator-dots autoplay circular>
+<view class="container">
+  <swiper indicator-dots autoplay circular class="swpier_container">
     <swiper-item
       wx:for="{{swiperList}}"
       wx:for-item="item"
@@ -12,4 +12,15 @@
       </navigator>
     </swiper-item>
   </swiper>
+  <view class='theme-container' >
+    <block wx:for="{{themes}}" wx:key="index" >
+     <view class='theme-box' data-themeType="{{item.theme_type}}" bind:tap='themeNavigation'>
+        <view class='theme-icon'>
+          <image src='{{item.theme_icon}}'></image>
+        </view>
+        <text>{{item.theme_name}}</text>
+     </view>
+    </block>     
+  </view>
 </view>
+
